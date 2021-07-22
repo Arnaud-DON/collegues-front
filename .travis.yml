@@ -13,7 +13,3 @@ on:
 branch: master
 notifications:
 email: false
-branches:
-only:
-- gh-pages
-- /.*/
