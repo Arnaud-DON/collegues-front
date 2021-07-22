@@ -5,12 +5,12 @@ before_script:
 - npm install
 script: npm run build
 deploy:
-  local-dir: dist/collegues-front
-  provider: pages
-  skip-cleanup: true
-  github-token: $GITHUB_TOKEN == Set in travis-ci.org dashboard, marked secure
-  on:
-  branch: master
-  target_branch: gh-pages
+local-dir: dist/collegues-front
+provider: pages
+skip-cleanup: true
+github-token: $GITHUB_TOKEN == Set in travis-ci.org dashboard, marked secure
+target_branch: gh-pages
+on:
+branch: master
 notifications:
 email: false
